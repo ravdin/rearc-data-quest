@@ -2,8 +2,8 @@
 
 ### Part 1: AWS S3 & Sourcing Datasets
 
-1. The dataset is hosted [here](https://edgeofjupiter.s3.amazonaws.com/rearc-data/bls/index.html)
-2. I created a Lambda function [sync_bls_data](snyc_bls_data/lambda_function.py) to automate the data sync. The script compares files that are downloaded from the source with a SHA256 checksum. Newly added or updated files are added to the S3 bucket. Missing file names are presumed to be deleted and are removed from the S3 bucket.
+1. The dataset is hosted [here](https://edgeofjupiter.s3.amazonaws.com/rearc-data/bls/index.html).
+2. I created a Lambda function [sync_bls_data](sync_bls_data/lambda_function.py) to automate the data sync. The script compares files that are downloaded from the source with a SHA256 checksum. Newly added or updated files are added to the S3 bucket. Missing file names are presumed to be deleted and are removed from the S3 bucket.
 
 ### Part 2: APIs
 
